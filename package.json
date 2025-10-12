@@ -1,0 +1,33 @@
+{
+  "name": "hc-wiki",
+  "version": "1.0.0",
+  "description": "HC Wiki command-line tool",
+  "main": "dist/index.js",
+  "bin": {
+    "hc-wiki": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "wiki"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.1.9",
+    "commander": "^11.0.0",
+    "dotenv": "^17.2.3",
+    "zod": "^3.25.76"
+  }
+}
